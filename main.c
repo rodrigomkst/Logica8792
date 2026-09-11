@@ -12,13 +12,14 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
- int idade; 
+float valor, cotacao; 
 
- printf("Digite a idade;"); 
- scanf("%d", &idade); 
+printf("Digite um valor em reais: "); 
+scanf ("%f", &valor);
+printf ("Digite a cotacão do dolar: "); 
+scanf("%f", &cotacao); 
 
- printf("Equivale a %d meses \n", idade * 12); 
- printf("Equivale a %d dias (aproximado)\n", idade * 365);
- 
+printf ("Valor em dolares: %.2f\n", valor / cotacao); 
+
    return 0; 
 }
