@@ -1,6 +1,5 @@
 #include<stdio.h> 
 #include<locale.h> 
-#include<stdbool.h>
 #include<windows.h>
 
 
@@ -8,16 +7,20 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
-int segundos,horas, minutos, resto; 
+int n; 
 
-printf("digite a quantidade de segundos:"); 
-scannf("%d", &segundos); 
+printf("ditgite um numero:"); 
+scanf("%d", &n); 
 
-horas = segundos / 3600; 
-minutos = (segundos % 3600) / 60; 
-resto = segundos % 60; 
+//if(...){
+  //    code.. 
+//}
 
-printf("%d horas, %d minutos e %d segundos\n", horas, minutos, resto); 
+if (n > 0){
+  printf("positivo\n");
+}else{
+  printf("negativo\n");
+}
 
    return 0; 
 }
