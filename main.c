@@ -10,16 +10,15 @@ bool ehPar(int numero){
 
 int main(){   
 
-setlocale(LC_ALL, "pt_BR.UTF-8"); 
-  
-float valor, cotacao; 
 
-printf("Digite um valor em reais: "); 
-scanf ("%f", &valor);
-printf ("Digite a cotacão do dolar: "); 
-scanf("%f", &cotacao); 
+float raio; 
+const float PI = 3.14159; 
 
-printf ("Valor em dolares: %.2f\n", valor / cotacao); 
+printf("Digite o raio do circulo"); 
+scanf("%f", &raio); 
 
+printf("Area: %.2f\n", PI * raio *raio); 
+printf("Perimetro: %.2f\n", 2 * PI * raio);
+ 
    return 0; 
 }
