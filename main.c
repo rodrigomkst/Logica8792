@@ -11,14 +11,13 @@ bool ehPar(int numero){
 int main(){   
 
 
-float raio; 
-const float PI = 3.14159; 
+float n1, n2, n3, media; 
 
-printf("Digite o raio do circulo"); 
-scanf("%f", &raio); 
+printf("Digite tres notas: "); 
+scanf("%f %f %f", &n1, &n2, &n3); 
+media = (n1 + n2 + n3) / 3;
 
-printf("Area: %.2f\n", PI * raio *raio); 
-printf("Perimetro: %.2f\n", 2 * PI * raio);
+printf("Medias: %2.f\n", media);
  
    return 0; 
 }
