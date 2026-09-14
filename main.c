@@ -3,31 +3,26 @@
 #include<windows.h>
 
 
-int main(){   
+int main(){ 
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
-int idade; 
+int a, b, c, maior; 
 
-printf("digite uma idade:" );
-scanf("%d", &idade); 
+printf("digite tres numeros: "); 
+scanf("%d %d %D", &a, &b, &c); 
 
-if (idade >= 50 ){
-    printf("voce e senior!")
+maior = a; 
 
-}else if(idade >= 18){
-  printf("voce e senior")
+if(b > maior) maior = b; 
+if(c > maior) maior =c; 
 
-}else if(idade >= 18){
-  printf("voce e maior de idade") 
-
-}else if(idade >= 12){
-  printf("voce e adolecente")
-
-}else if(idade >= 9){
-  printf("voce e pre adolecente") 
+printf("maior: %d", maior); 
 
  
 
 
-}return 0; }
+
+   return 0;
+}
+
