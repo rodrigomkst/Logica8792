@@ -9,7 +9,7 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
 int a, b, c, d, e, f, maior; 
 
 printf("digite tres numeros: "); 
-scanf("%d %d %D", &a, &b, &c); 
+scanf("%d %d %D", &a, &b, &c, &d, &e, &f); 
 
 maior = a; 
 
