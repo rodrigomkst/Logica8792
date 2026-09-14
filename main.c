@@ -12,11 +12,14 @@ int n;
 printf("ditgite um numero:"); 
 scanf("%d", &n); 
 
-//if(...){
-  //    code.. 
-//}
+if(n % 2 == 0){
+    printf("\npar"); 
+}else{
+     printf("\nimpar");
+}
 
-printf("%s",n > 0 ? "positivo" : (n < 0 ? "negativo" : "zero")); 
+
+
 
    return 0; 
 }
