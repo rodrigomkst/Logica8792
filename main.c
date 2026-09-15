@@ -11,10 +11,10 @@ int a, b;
 printf("digite dois numeros: ");
 scanf("%d %d", &a, &b); 
 
-if(a == b){
-  printf("os numeros sao iguais!\n"); 
+if(a != b){
+  printf("os dois numeros sao iguais!\n"); 
 }else{
-  printf("os numeros sao diferentes!\n");
+  printf("os dois numeros sao diferentes!\n");
 }
 
 
