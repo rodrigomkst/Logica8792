@@ -6,20 +6,29 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
-int a, b, c, d, e, f, maior; 
+int a, b, c, d, e, menor; 
 
-printf("digite tres numeros: "); 
-scanf("%d %d %d &d &d &d", &a, &b, &c, &d, &e, &f); 
+printf("digite um numero para a:");
+scanf("%d", &a); 
 
-maior = a; 
+printf("digite um numero para b: ");
+scanf("%d", &b); 
 
-if(b > maior) maior = b; 
-if(c > maior) maior =c; 
-if(d > maior) maior =d;
-if(e > maior) maior =e; 
-if(f > maior) maior =f; 
+printf("digite um valor para c: "); 
+scanf("%d", &c); 
 
-printf("maior: %d", maior); 
+printf("digite um valor para e: "); 
+scanf("%d", &e);
+  
+menor = a; 
+
+if(b > menor) menor =b; 
+if(c > menor) menor =c; 
+if(d > menor) menor =d;
+if(e > menor) menor =e; 
+
+
+printf("menor: %d", menor); 
 
  
 
