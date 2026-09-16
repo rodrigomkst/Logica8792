@@ -11,23 +11,36 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
   printf("digite um numero de (1 a 7): "); 
   scanf("%d", &diadaSemana); 
 
-  if(diadaSemana == 1){
-    printf("domingo!");
-  }else if(diadaSemana == 2){
-    printf("Segunda-feira");
-  }else if(diadaSemana == 3){
-    printf("Terça-feira");
-  }else if(diadaSemana == 4){
-    printf("Quarta-feira");
-  }else if(diadaSemana == 5){
-    printf("Quinta-feira");
-  }else if(diadaSemana == 6){
-    printf("Sexta-feira");
-  }else if(diadaSemana == 7){
-    printf("sabado!");
-  }else{
-    printf("valor invalido!");
+  switch(diadaSemana){
+    case 1: 
+      printf("domingo!"); 
+      break;
+    case 2: 
+      printf("Segunda-feira"); 
+      break;
+    case 3:
+      printf("Terça-feira");
+      break;
+    case 4:
+      printf("Quarta-feira");
+      break;
+    case 5: 
+      printf("Quinta-feira");
+      break;
+    case 6:
+      printf("Sexta-feira");
+      break;
+    case 7:
+      printf("Sabado!");
+      break;
+    
+    default:
+      printf("numero invalido!!");
+      break;
   }
+ 
+ 
+ 
  return 0;
 }
 
