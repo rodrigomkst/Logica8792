@@ -6,19 +6,29 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
-int idade; 
-int ehEstudante;
+  int n1, n2, n3; 
+  float media; 
+  float freq;
 
-printf("qual sua idade?");
-scanf("%d", &idade); 
-printf("\nvoce e estudante (0 - nao | 1 - sim):");
-scanf("%d", &ehEstudante); 
+  printf("digite a nota 1:"); 
+  scanf("%d", &n1);
 
-if((idade >= 60 ) && (ehEstudante == 1)){
-  printf("parabens, voce tem direito a desconto!");
-}else{
-  printf("infelizmente voce nao tera desconto!");
-}
+  printf("digite a nota 2:"); 
+  scanf("%d", &n2);
+
+  printf("digite a nota 3:"); 
+  scanf("%d", &n3);
+
+  media = (n1 + n2 + n3) / 3;
+
+  printf("digite a frequencia(em numeros apenas):"); 
+  scanf("%f", &freq); 
+
+  if(media >= 7 && freq >= 75){
+    printf("\nAprovado com sucesso!"); 
+  }else{
+    printf("\nReprovado!");
+  }
 
  return 0;
 }
