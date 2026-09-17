@@ -12,18 +12,15 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
   printf("digite os tres lados do triangulo:");
   scanf("%f %f %f", &a, &b, &c); 
 
-  if(a == b && b == c){
-    printf("Equilatero!\n");
-  }else if(a == b || a == c){
-    printf("isosceles!\n");
-  }else{
-    printf("escaleno!\n");
-  }
+ if(a + b > c && a + c > b && b + c > a){
+    printf("os lados formam um triangulo!\n");
+ }else{
+    printf("os lados NÂo formam um triangulo!\n");
+ }
 
     
       
 
- 
- return 0;
+  return 0;
 }
 
