@@ -6,40 +6,31 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
-  int diadaSemana; 
 
-  printf("digite um numero de (1 a 7): "); 
-  scanf("%d", &diadaSemana); 
+  float n1, n2, n3, media; 
 
-  switch(diadaSemana){
-    case 1: 
-      printf("domingo!"); 
-      break;
-    case 2: 
-      printf("Segunda-feira"); 
-      break;
-    case 3:
-      printf("Terça-feira");
-      break;
-    case 4:
-      printf("Quarta-feira");
-      break;
-    case 5: 
-      printf("Quinta-feira");
-      break;
-    case 6:
-      printf("Sexta-feira");
-      break;
-    case 7:
-      printf("Sabado!");
-      break;
+  printf("digite sua nota 1:");
+  scanf("%f", &n1); 
+
+  printf("digite a nota 2:");
+  scanf("%f", &n2);
+
+  printf("digite sua nota 3:");
+  scanf("%f", &n3); 
+
+  media = (n1 + n2 + n3) / 3;
+
+if(media >= 7){
+printf("aprovado!");
+}else if(media >= 5){
+printf("recuperaçao");
+}else{
+  printf("reprovado!"); 
+}
+
     
-    default:
-      printf("numero invalido!!");
-      break;
-  }
- 
- 
+      
+
  
  return 0;
 }
