@@ -7,26 +7,18 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
 
-  float n1, n2, n3, media; 
+  float a, b, c;
 
-  printf("digite sua nota 1:");
-  scanf("%f", &n1); 
+  printf("digite os tres lados do triangulo:");
+  scanf("%f %f %f", &a, &b, &c); 
 
-  printf("digite a nota 2:");
-  scanf("%f", &n2);
-
-  printf("digite sua nota 3:");
-  scanf("%f", &n3); 
-
-  media = (n1 + n2 + n3) / 3;
-
-if(media >= 7){
-printf("aprovado!");
-}else if(media >= 5){
-printf("recuperaçao");
-}else{
-  printf("reprovado!"); 
-}
+  if(a == b && b == c){
+    printf("Equilatero!\n");
+  }else if(a == b || a == c){
+    printf("isosceles!\n");
+  }else{
+    printf("escaleno!\n");
+  }
 
     
       
