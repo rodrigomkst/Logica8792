@@ -7,20 +7,36 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
 
-  float a, b, c;
+ int opcao;
 
-  printf("digite os tres lados do triangulo:");
-  scanf("%f %f %f", &a, &b, &c); 
+ printf("--- SISTEMA DE PEDAGIO ---\n");
+ printf("1 - moto\n");
+ printf("2 - carro passeio\n");
+ printf("3 - caminhão\n");
+ printf("4 - onibus\n");
+ scanf("%d", &opcao);
 
- if(a + b > c && a + c > b && b + c > a){
-    printf("os lados formam um triangulo!\n");
- }else{
-    printf("os lados NÂo formam um triangulo!\n");
+switch (opcao)
+ {
+  case 1: 
+    printf("Categoria: moto | tarifa R$ 5,00\n");
+    break;
+  case 2:
+    printf("categoria: carro passeio | tarifa R$ 10,00\n");
+    break;
+  case 3: 
+    printf("categoria: caminhao | tarifa: R$ 25,00\n"); 
+    break;
+  case 4:
+    printf("categoria: onibus | tarifa: R$ 20,00\n");
+    break;
+   default:
+    printf("erro: categoria nao cadastrada no sistema. \n");
+    break;
  }
 
     
       
-
-  return 0;
+   return 0;
 }
 
