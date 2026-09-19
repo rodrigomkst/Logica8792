@@ -7,19 +7,16 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
 
+int ano; 
+printf("Digite o ano: "); 
+scanf("%d", &ano); 
 
-int n; 
-printf("Digite um numero:");
-scanf("%d", &n); 
-
-if(n % 3 == 0 && n % 5 ==0){
-  printf("Multiplo de 3 e 5\n");
-}else if(n % 3 ==0){
-  printf("Multiplo de 3\n");
-}else if(n % 5 == 0){
-  printf("Multiplo de 5\n");
+if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0){
+    printf("Ano: %d\n", ano);
+    printf("Ano bissexto!\n");
 }else{
-  printf("Não e multiplo de 3 nem de 5\n");
+    printf("Ano: %d\n", ano);
+    printf("Ano NÂO bissexto!\n");
 }
  
 
