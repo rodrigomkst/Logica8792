@@ -7,16 +7,24 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
 
-int ano; 
-printf("Digite o ano: "); 
-scanf("%d", &ano); 
+float peso, altura, imc;
 
-if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0){
-    printf("Ano: %d\n", ano);
-    printf("Ano bissexto!\n");
+printf("digite o peso (kg): ");
+scanf("%f", &peso); 
+
+printf("Digite a altura (m): ");
+scanf("%f", &altura);
+
+imc = peso / (altura * altura);
+
+if(imc < 18.5){
+    printf("Classificaçao: abaixo do peso!\n");
+}else if(imc < 25){
+    printf("Classificaçao: peso normal!\n");
+}else if(imc < 30){
+    printf("Classificaçao: sobrepeso!\n");
 }else{
-    printf("Ano: %d\n", ano);
-    printf("Ano NÂO bissexto!\n");
+    printf("Classificaçao: obesidade\n");
 }
  
 
