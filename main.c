@@ -18,6 +18,8 @@ scanf("%f", &altura);
 imc = peso / (altura * altura);
 
 if(imc < 18.5){
+    printf("seu peso é: %f\n", peso);
+   printf("sua altura é: %f\n", altura);
     printf("Classificaçao: abaixo do peso!\n");
 }else if(imc < 25){
     printf("Classificaçao: peso normal!\n");
