@@ -3,23 +3,24 @@
 #include<windows.h>
 #include<math.h>
 
-int tabuada (int n){
-    printf("tabuada do %d:\n", n);
-    for(int i = 1; i <= 10; i++){
-         printf("%d x %d = %d\n", n * i);
+void verificarEhparImpar(int n){
+    if(n % 2 == 0){
+        printf("%d e par!\n", n);
+    }else{
+        printf("%d e impar\n", n);
     }
-   return 0;
+
+        
+
+    
 }
 
 int main(){ 
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
-    int numero;
-    printf("digite um numero para ver a tabuada: ");
-    scanf("%d", &numero);
-    tabuada(numero); 
-
- 
+  
+ verificarEhparImpar(10);
+ verificarEhparImpar(7);
  
    return 0;
 }
