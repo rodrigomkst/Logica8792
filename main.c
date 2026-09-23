@@ -3,19 +3,25 @@
 #include<windows.h>
 #include<math.h>
 
-int fatorial(int n){
-    int resultado = 1; 
-    for(int i = 1; i <= n; i++){
-        resultado *= i;
-    }
-     return resultado;
+void fibonacci(int termos){
+    int a = 0, b = 1, c;
+    printf("sequencia de fibonacci (%d termos): \n", termos);
+    for(int i = 1; i <= termos; i++){
+        printf("%d\n", a); 
+        c = a + b;
+        a = b;
+        b = c; 
+   }
+    printf("\n");
 }
+
 
 int main(){ 
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
-int numero = 5; 
-printf("fatorial de %d = %d\n", numero, fatorial(numero));  
+
+fibonacci(10); 
+
  
    return 0;
 }
