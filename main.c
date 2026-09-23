@@ -4,21 +4,21 @@
 #include<math.h>
 
 int tabuada (int n){
-    int resultado;
     printf("tabuada do %d:\n", n);
     for(int i = 1; i <= 10; i++){
-        resultado = n * i;
-        printf("%d x %d = %d\n", n, i, resultado);
+         printf("%d x %d = %d\n", n * i);
     }
-   return resultado;
+   return 0;
 }
 
 int main(){ 
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
-    int ultimo = tabuada(7);
-    printf("ultima valor da tabuada: %d\n", ultimo); 
-    
+    int numero;
+    printf("digite um numero para ver a tabuada: ");
+    scanf("%d", &numero);
+    tabuada(numero); 
+
  
  
    return 0;
