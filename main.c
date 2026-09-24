@@ -7,13 +7,22 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int i = 1;
-while(i <= 50){
-   if(i % 2 == 0)
-  printf("%d\n", i);
-   
+int n, soma = 0;
+
+printf("Digite um valor");
+scanf("%d\n", &n);
+
+for(int i = 1; i <= n; i++){
+   //soma = soma + i;
+   soma += i;
 }
- i++;  
+         printf("o resultado da soma e: %d\n", soma);
+
+
+
+
+
+
    return 0;
 }
 
