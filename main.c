@@ -7,14 +7,17 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int i = 5; 
+int numero;
+printf("Digite um numero positivo: ");
+scanf("%d", numero);
 
-while(i <= 6){
-   printf("%d\n", i);
-   i++; 
+while(numero <= 0){
+   printf("Numero invalido! digite novamente: ");
+   scanf("%d", &numero);
+
 }
 
-
+printf("Numero valido: %d\n", numero);
 
    return 0;
 }
