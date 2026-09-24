@@ -3,24 +3,21 @@
 #include<windows.h>
 #include<math.h>
 
-void verificarEhparImpar(int n){
-    if(n % 2 == 0){
-        printf("%d e par!\n", n);
-    }else{
-        printf("%d e impar\n", n);
+void linha(int tamanho){
+    for(int i = 0; i < tamanho; i++){
+        printf("*");
     }
+    printf("\n");
+} 
 
         
 
     
-}
-
 int main(){ 
 
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
   
- verificarEhparImpar(10);
- verificarEhparImpar(7);
+  linha(2000);
  
    return 0;
 }
