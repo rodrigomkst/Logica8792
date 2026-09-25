@@ -7,17 +7,27 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int numero, contador = 0;
+int n, primo = 1;
 
-printf("Digite numeros (0 para parar): \n");
-scanf("%d", &numero);
+printf("Digite seu numero: ");
+scanf("%d", &n);
 
-while(numero != 0){
-   contador++;
-   scanf("%d", &numero);
-
+if(n < 2){
+   primo = 0;
+}else{
+   for(int i = 2; i <= n / 2; i++){
+      if(n % i ==0){
+         primo = 0;
+         break;
+      }
+   }
 }
-printf("Quantidade de numeros digitados: %d\n", contador);
+if(primo){
+   printf("%d é primo\n");
+}else{
+   printf("%d não é primo\n", n);
+}
+
 
    return 0;
 }
