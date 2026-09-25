@@ -8,22 +8,18 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
 int n; 
-int resultado;
+float valor, soma = 0;
 
-printf("Digite um valor para tabuada");
-resultado = scanf("%d", &n);
+printf("Quantos numeros deseja digitar:");
+scanf("%d", &n);
 
-if(resultado != 1){
-   printf("Entrada invalida! por favor,digite apenas numeros!");
-   return 1;
+for(int i = 0; i < n; i++){
+   printf("Digite o numero %d: ", i + 1);
+   scanf("%f", &valor);
+   soma += valor;
+
 }
-
-   for(int i = 1; i <= 10; i++){
-      int resposta = n * i;
-      printf("o resultado de %d x %d e %d\n", n, i, resposta);
-   }
-
-
+printf("Media: %.2f\n", soma / n);
    return 0;
 }
 
