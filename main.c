@@ -7,20 +7,17 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int n, soma = 0;
+int n;
+long long fatorial = 1;
 
-printf("Digite um valor");
-scanf("%d\n", &n);
+printf("Digite um numero");
+scanf("%d", &n);
 
 for(int i = 1; i <= n; i++){
-   //soma = soma + i;
-   soma += i;
+   fatorial *= i;
+
 }
-         printf("o resultado da soma e: %d\n", soma);
-
-
-
-
+printf("Fatorial: %lld\n", fatorial);
 
 
    return 0;
