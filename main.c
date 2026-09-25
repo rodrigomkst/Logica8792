@@ -7,19 +7,18 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int n; 
-float valor, soma = 0;
+int numero, contador = 0;
 
-printf("Quantos numeros deseja digitar:");
-scanf("%d", &n);
+printf("Digite numeros (0 para parar): \n");
+scanf("%d", &numero);
 
-for(int i = 0; i < n; i++){
-   printf("Digite o numero %d: ", i + 1);
-   scanf("%f", &valor);
-   soma += valor;
+while(numero != 0){
+   contador++;
+   scanf("%d", &numero);
 
 }
-printf("Media: %.2f\n", soma / n);
+printf("Quantidade de numeros digitados: %d\n", contador);
+
    return 0;
 }
 
