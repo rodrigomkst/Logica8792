@@ -8,14 +8,21 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int i;
+int contador = 0;
 
-for( i = 0000; i <= 9999; i++){
-   printf("%d\n", i);
+for(int i = 0; i <= 9; i++){
+   for(int j = 0; j <= 9; j++){
+      for(int x = 0; x <= 9; x++){
+         for(int y = 0; y <= 9; y++){
+            contador++;
    
+   printf("Os possiveis resultados do cadeado: %d %d %d %d\n", i, j, x, y);
+         }
+      }
+   }
 }
-printf("As combinações possiveis serão: %d", i);
  
+ printf("O numero total de iterações: %d\n", contador);
    return 0;
 }
 
