@@ -8,58 +8,21 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int o;
-float a, b;
+int n;
 
-do{
-   printf("\n---MENU---\n");
-   printf("1 - soma\n");
-   printf("3 - multiplicação\n");
-   printf("4 - divisão\n");
-   printf("0 - sair\n");
-   printf("Escolha uma opção");
-   scanf("%d", &o);
+printf("Digite algum numero");
+scanf("%d", &n);
 
-   switch(o){
-      
-      case 1:
-         printf("Digite dois numeros: ");
-         scanf("%f %f", &a, &b);
-         printf("Resultado: %.f\n", a + b);
-         break;
-      
-      case 2:printf("Digite dois numeros: ");
-             scanf("%f %f", &a, &b);
-             printf("Resultado: %.f\n", a - b);
-             break;
-    
-      case 3: 
-         printf("Digite dois numeros: ");
-         scanf("%f %f", &a, &b);
-         printf("Resultado: %.2f\n", a * b);
-         break;
-     
-      case 4:
-         printf("Digite dois numeros: ");
-         scanf("%f %f", &a, &b);
-         if(b != 0)
-            printf("Resultado: %.2f\n", a / b);
-         else 
-            printf("Erro: divisão por zero!\n");
-         break;
-      
-      case 0:
-         printf("Saindo...");
-         break;
-      
-      default: 
-         printf("opção invalida!\n");
-         break;
+for(int i = 1; i <= 10; i++){
+   for(int j = n; j <= 10; j++){
+   printf("%d x %d = %d\n", j, i, j * i);
 
-
-            
    }
-}while(o != 0);
+   printf("\n");
+}
+
+
+ 
    return 0;
 }
 
