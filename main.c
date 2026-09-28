@@ -8,21 +8,19 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int contador = 0;
+int n; 
 
-for(int i = 0; i <= 9; i++){
-   for(int j = 0; j <= 9; j++){
-      for(int x = 0; x <= 9; x++){
-         for(int y = 0; y <= 9; y++){
-            contador++;
-   
-   printf("Os possiveis resultados do cadeado: %d %d %d %d\n", i, j, x, y);
-         }
-      }
+printf("De que tamanho sera o quadrado: ");
+scanf("%d", &n);
+
+for(int i = 0; i <= n; i++){
+   for(int j = 1; j <= n; j++){
+      printf(" * ");
    }
+     printf("\n");
+   
 }
- 
- printf("O numero total de iterações: %d\n", contador);
+
    return 0;
 }
 
