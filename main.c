@@ -8,19 +8,11 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int n;
-
-printf("Digite algum numero");
-scanf("%d", &n);
-
-for(int i = 1; i <= 10; i++){
-   for(int j = n; j <= 10; j++){
-   printf("%d x %d = %d\n", j, i, j * i);
-
+for(int i = 1; i < 3; i++){
+   for(int j = 1; j < 3; j++){
+      printf("For externo e for interno: %d %d\n", i, j);
    }
-   printf("\n");
 }
-
 
  
    return 0;
