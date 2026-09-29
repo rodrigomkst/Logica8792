@@ -8,18 +8,15 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int n; 
-
-printf("De que tamanho sera o quadrado: ");
+int n;
+printf("Digite o tamanho do triangulo");
 scanf("%d", &n);
 
-for(int i = 0; i <= n; i++){
-   for(int j = 1; j <= n; j++){
+for(int i = 1; i <= n; i++){
+   for(int j = 1; j <= i; j++){
       printf(" * ");
-      printf("\t");
    }
-     printf("\n");
-   
+   printf("\n");
 }
 
    return 0;
