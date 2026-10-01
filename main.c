@@ -8,30 +8,18 @@
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-int cubo[2][3][4] = {
-{
-         {1, 2, 3, 4},
-         {5, 6, 7, 8},
-         {9, 10, 11, 12}
-},
-{
-         {13, 14, 15, 16},
-         {17, 18, 19, 20},
-         {21, 22, 23, 24}
+int n;
+printf("Digite o tamanho do vetor: ");
+scanf("%d", &n);
+int v[n];
+int soma = 0;
+for(int i = 0; i < n; i++){
+   printf("Digite o valor %d: ", i + 1);
+   scanf("%d", &v[i]);
+   soma += v[i];
 }
-
-};
-   for(int i = 0; i <= 1; i++){
-      for(int j = 0; j <= 2; j++){
-         for(int k = 0; k <= 3; k++){
-
-            printf("%d", cubo[i][j][k]);
-            printf("\n");
-         }
-         printf("\n");
-      }
-      printf("\n");
-   }
+  printf("Soma: %d\n", soma); 
+  printf("Média: %.2f\n", (float)soma/n);
   
    return 0;
 }
