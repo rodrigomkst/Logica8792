@@ -4,14 +4,14 @@
 #include<math.h>
 #include<string.h>
 
-void num(){
-   printf("Este é o número 5");
+char* saudacao(){
+   return "OLÁ, seja bem vindo(a)!";
 }
 
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-num();
+printf("%s\n", saudacao()); 
 
    return 0; 
 }
