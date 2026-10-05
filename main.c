@@ -4,28 +4,50 @@
 #include<math.h>
 #include<string.h>
 
+int votosA = 0;
+int votosB = 0; 
+int votosNulos = 0; 
+
+void votar(int numero){
+   if(numero == 1){
+      votosA++;
+      printf("Voce votou no candidato A.\n");
+   }else if(numero == 2){
+      votosB++;
+      printf("Voce votou no candidato b.\n");
+   }else{
+      votosNulos++;
+      printf("Voto nulo.\n");
+   }
+}
+
+void resultado(){
+   printf("\n==== RESULTADO DA VOTAÇÃO====\n");
+   printf("Candidato A: %d votos\n", votosA);
+   printf("Candidato B: %d votos\n", votosB);
+   printf("Nulos: %d votos\n", votosNulos);
+
+   if(votosA > votosB){
+      printf(">>> Candidato A vanceu!\n");
+   }else if(votosB > votosA){
+      printf(">>> Condidato B venceu!\n");
+   }else{
+      printf(">>> EMPATE!\n");
+   }
+}
+
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
 int voto; 
+int totalEleitores = 10;
 
-printf("---DIGITE O NÚMERO DO ELEITOR---");
-scanf("%d", &voto);
-
-if(voto = 10){
-   printf("Manuel");
-}else if(voto = 20){
-   printf("Carla");
-}else if(voto = 30){
-   printf("Bianca");
-}else if(voto = 40){
-   printf("Henrique");
-}else if(voto = 50){
-   printf("Bruno");
-}else{
-   printf("Escolha um candidato valido!");
+for(int i = 0; i < totalEleitores; i++){
+   printf("Eleitor %d - Digite 1 para A, 2 para B: ", i + 1);
+   scanf("%d", &voto);
+   votar(voto);
+   
 }
-
 
    
    
