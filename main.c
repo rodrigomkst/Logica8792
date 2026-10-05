@@ -4,14 +4,31 @@
 #include<math.h>
 #include<string.h>
 
-char* retornarNome(char nome[]) {
-   return nome;
-}
-
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-printf("O nome é: %s\n", retornarNome("rodrigo")); 
+int voto; 
 
+printf("---DIGITE O NÚMERO DO ELEITOR---");
+scanf("%d", &voto);
+
+if(voto = 10){
+   printf("Manuel");
+}else if(voto = 20){
+   printf("Carla");
+}else if(voto = 30){
+   printf("Bianca");
+}else if(voto = 40){
+   printf("Henrique");
+}else if(voto = 50){
+   printf("Bruno");
+}else{
+   printf("Escolha um candidato valido!");
+}
+
+
+   
+   
+   
    return 0; 
 }
