@@ -4,14 +4,14 @@
 #include<math.h>
 #include<string.h>
 
-char* saudacao(){
-   return "OLÁ, seja bem vindo(a)!";
+char* retornarNome(char nome[]) {
+   return nome;
 }
 
 int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8"); 
 
-printf("%s\n", saudacao()); 
+printf("O nome é: %s\n", retornarNome("rodrigo")); 
 
    return 0; 
 }
